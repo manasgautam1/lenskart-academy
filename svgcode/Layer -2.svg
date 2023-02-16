@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="6983.544" height="4169.1" viewBox="0 0 6983.544 4169.1">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #1c1c3d;
+      }
+
+      .cls-2 {
+        fill: #ffedcc;
+      }
+
+      .cls-3 {
+        fill: #00dca6;
+      }
+
+      .cls-4 {
+        fill: #565656;
+      }
+
+      .cls-5 {
+        fill: #d8f5eb;
+      }
+
+      .cls-6 {
+        fill: none;
+      }
+    </style>
+  </defs>
+  <g id="Layer_1" data-name="Layer 1" transform="translate(1176.022 -4434.18)">
+    <rect id="Rectangle_54" data-name="Rectangle 54" class="cls-1" width="595.368" height="595.368" transform="translate(-1176.022 5843.766)"/>
+    <rect id="Rectangle_55" data-name="Rectangle 55" class="cls-2" width="595.368" height="595.368" transform="translate(-1176.022 5138.973)"/>
+    <rect id="Rectangle_56" data-name="Rectangle 56" class="cls-3" width="595.368" height="595.368" transform="translate(-1176.022 4434.18)"/>
+    <rect id="Rectangle_57" data-name="Rectangle 57" class="cls-4" width="595.368" height="595.368" transform="translate(-1176.022 6582.954)"/>
+    <rect id="Rectangle_58" data-name="Rectangle 58" class="cls-5" width="595.368" height="595.368" transform="translate(-1176.022 7322.143)"/>
+    <path id="Rectangle_59" data-name="Rectangle 59" class="cls-6" d="M409.144,0H734.178a0,0,0,0,1,0,0V818.289a0,0,0,0,1,0,0H409.144A409.144,409.144,0,0,1,0,409.145v0A409.144,409.144,0,0,1,409.144,0Z" transform="translate(5073.345 7784.991)"/>
+  </g>
+</svg>

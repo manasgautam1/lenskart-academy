@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="style.css">
+    <title>Lenskart Academy Form</title>
+</head>
+<body>
+    <div class="row outer-container mx-0">
+      <div class="col-lg-6 left">
+        <img src="./lenskart-logo.png" alt="" class="logo">
+        <h1 class="mb-0">
+          Become a <br> <span>leader</span> of <br> <span>tomorrow</span>
+        </h1>
+        <img src="./lenskart-vector.png" alt="" class="vector">
+      </div>
+      <div class="col-lg-6 right">
+        <div class="my-container">
+          <h2>Fill out this candidate registration form</h2>
+          <form id="form" name="google-sheet" method="post">
+              <div class="form-group">
+                <label for="name">Name<span>*</span></label>
+                <input type="text" class="form-control" name="name" id="name" placeholder="Enter name">
+              </div>
+              <div class="form-group">
+                <label for="email">Email<span>*</span></label>
+                <input type="email" class="form-control" name="email" id="email" placeholder="Enter email">
+              </div>
+              <div class="form-group">
+                <label for="college">College Name<span>*</span></label>
+                <select class="form-select form-control dropdown-toggle" name="college-name" id="college-name">
+                  <option selected>Choose</option>
+                  <option value="IIT Delhi">IIT, Delhi</option>
+                  <option value="Delhi University, Delhi">Delhi University, Delhi</option>
+                  <option value="Amity University, Noida">Amity University, Noida</option>
+                </select>
+              </div>
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <label for="degree">Degree/Course<span>*</span></label>
+                    <input type="text" class="form-control" name="degree" id="degree" placeholder="Enter course">
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <label for="year">Year<span>*</span></label>
+                    <input type="year" class="form-control" name="year" id="year" placeholder="Enter year">
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <label for="primary-mobile-number">Primary Mobile Number<span>*</span></label>
+                    <input type="phone" class="form-control" name="primary-mobile-number" id="primary-mobile-number" placeholder="Enter mobile number">
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <label for="alternate-mobile-number">Alternate Mobile Number<span>*</span></label>
+                    <input type="phone" class="form-control" name="alternate-mobile-number" id="alternate-mobile-number" placeholder="Enter mobile number">
+                  </div>
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="recruiter-name">Recruiter Name<span>*</span></label>
+                <input type="text" class="form-control" name="recruiter-name" id="recruiter-name" placeholder="Enter recruiter name">
+              </div>
+              <!-- <div class="form-group">
+                <label for="email">Email<span>*</span></label>
+                <input type="time" name="timestamp" step="1">
+              </div> -->
+              <button type="submit" id="submit-button" class="btn mt-3">Submit</button>
+              <!-- <div id="loader">
+                <div class="spinner-border" role="status"></div>Submitting
+              </div> -->
+            </form>
+        </div>
+      </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

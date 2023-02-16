@@ -1,0 +1,758 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+    <link href="css/desktop.css" rel="stylesheet">
+    <link href="css/tablet.css" rel="stylesheet">
+    <link href="css/mobile.css" rel="stylesheet">
+    <link href="css/icon-animation.css" rel="stylesheet">
+    <link href="css/floating-form.css" rel="stylesheet">
+    <title>Lenskart Academy</title>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-ZS4XZMSQ39"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-ZS4XZMSQ39');
+</script>
+</head>
+
+<body>
+    <div class="nav-div">
+        <nav class="navbar navbar-expand-lg container-fluid  page-navbar navbar-light">
+            <div class="navbar-logo">
+                <img src="images/logo.svg" alt="" srcset="">
+            </div>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto navbar-customize-menu">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">HOME <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about-section">ABOUT US <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#form-section">CONTACT US <span class="sr-only">(current)</span></a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+    <section class="nav-margin">
+    </section>
+    <header class="container-fluid m-0 p-0 hero-section general-padding">
+        <div class="row m-0 p-0">
+            <div class="col-md-5 header-left">
+                <h2 class="hero-heading">
+                    Become a leader of tomorrow!
+                </h2>
+                <p class="hero-subHeading">
+                    Framing of a brighter future starts here.
+                </p>
+                <a href="#know-more" class="hero-cta btn btn-primary">Know More</a>
+            </div>
+        </div>
+    </header>
+    <!-- Training the future Section -->
+    <section class="container-fluid m-0 p-0 general-padding form-section mt-5" id="form-section">
+        <div class="row m-0 p-0">
+            <div class="form-section-left">
+                <div class="form">
+                    <form id="form" name="google-sheet" method="post">
+                        <div class="floating-label">
+                            <input type="text" class="g-form-element form-control floating-input p-0" placeholder=" " required value="" name="name" id="name">
+                            <span class="highlight"></span>
+                            <label>Name</label>
+                        </div>
+                        <div class="floating-label">
+                            <input type="text" class="g-form-element form-control floating-input p-0" placeholder=" " required name="email" id="email">
+                            <span class="highlight"></span>
+                            <label>Email ID</label>
+                        </div>
+                        <div class="row m-0 p-0">
+                            <div class="floating-label col-md-2 col-3 p-0">
+                                <select class="floating-select g-form-element form-control p-0" id="selectCountry" required name="code" value="+91">
+                                    <option value="+91" selected>+91</option>
+                                </select>
+                                <span class="highlight"></span>
+                            </div>
+                            <div class="floating-label col-md-10 pl-1 col-9 p-0">
+                                <input type="number" class="g-form-element form-control floating-input p-0" placeholder=" " required name="mobile" id="mobile">
+                                <span class="highlight"></span>
+                                <label>Mobile</label>
+                            </div>
+                        </div>
+                        <div class="row m-0 p-0">
+                            <div class="floating-label col-md-6 p-0">
+                                <select class="floating-select g-form-element form-control p-0" id="selectState" required name="state" onclick="this.setAttribute('value', this.value);" value="">
+                                    <option value=""></option>
+                                </select>
+                                <span class="highlight"></span>
+                                <label id="selectStateLabel">State</label>
+                            </div>
+                            <div class="floating-label col-md-6 p-0 pl-1">
+                                <select class="floating-select g-form-element form-control p-0" name="city" required id="countrystatecitySelect" onclick="this.setAttribute('value', this.value);" value="">
+                                    <option value=""></option>
+                                </select>
+                                <span class="highlight"></span>
+                                <label id="countrystatecitySelectLabel">City</label>
+                            </div>
+                        </div>
+                        <div class="floating-label">
+                            <select class="floating-select g-form-element form-control p-0" name="interest" required id="interest" onclick="this.setAttribute('value', this.value);" value="">
+                                <option value=""></option>
+                                <option value="Academy of Optometry">Academy of Optometry</option>
+                                <option value="Academy of Retail">Academy of Retail</option>
+                            </select>
+                            <span class="highlight"></span>
+                            <label id="interestLabel">Field of Interest</label>
+                        </div>
+                        <div class="floating-label">
+                            <select class="floating-select g-form-element form-control p-0" name="experience" required id="experience" onclick="this.setAttribute('value', this.value);" value="">
+                                <option value=""></option>
+                                <option value="fresher">Fresher</option>
+                                <option value="0-1 year experience">0-1 year experience</option>
+                                <option value="2-3 years experience">2-3 years experience</option>
+                                <option value="3+ years experience">3+ years experience</option>
+                            </select>
+                            <span class="highlight"></span>
+                            <label id="experienceLabel">Experience</label>
+                        </div>
+                        <div class="d-flex align-items-center justify-content-center">
+                            <button class="btn btn-primary form-control" id="submit-button">Submit</button><button class="btn btn-primary form-control" id="submit-response">Done!</button>
+                            <div id="loader">
+                                <div class="spinner-border" role="status"></div>Submitting
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="form-section-right">
+                <h2 class="g-heading">
+                    Prepare for the future
+                </h2>
+                <p class="g-desc">
+                    An industry-focused, outcome-based learning ecosystem with a focus on imparting real-world skills.
+                </p>
+            </div>
+        </div>
+    </section>
+    <section class="container-fluid m-0 p-0 about-section" id="about-section">
+        <div class="row m-0 p-0">
+            <div class="left-details">
+                <h2>About Lenskart Academy</h2>
+                <p>To provide an exceptional customer experience, while ensuring that everyone under
+                    the Lenskart umbrella gains extra-ordinary training, we have curated Lenskart Academy, with one
+                    eye on the future – <br>
+                    both yours, and ours. </p>
+                <div class="about-bullets">
+                    <div class="single-bullet">
+                        <div class="bullet-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="98.577" height="112.505" viewBox="0 0 98.577 112.505">
+                                <g id="Group_37" data-name="Group 37" transform="translate(-123.678 -2649.936)">
+                                    <path id="Path_20" class="path" data-name="Path 20" d="M160.319,2727.157c-7.5-3.164-19.2-12.511-19.291-28.5s13.564-31.939,31.939-31.939a31.94,31.94,0,0,1,31.939,31.939c0,13.6-9.3,25.1-20,29.635" fill="none" stroke="#00dca6" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" />
+                                    <path id="Path_21" class="path" data-name="Path 21" d="M154.042,2741.874c-11.227-4.734-28.729-18.72-28.863-42.65s20.295-47.788,47.788-47.788a47.788,47.788,0,0,1,47.788,47.788c0,20.349-13.921,37.559-29.93,44.34" fill="none" stroke="#1c1c3d" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" />
+                                    <g id="Group_36" data-name="Group 36">
+                                        <path id="Path_22" class="path" data-name="Path 22" d="M172.8,2684.631l-6.056,19.177v53a6.752,6.752,0,0,0,12.448,0v-53.669Z" fill="none" stroke="#1c1c3d" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" />
+                                        <line id="Line_23" class="path" data-name="Line 23" x2="12.448" transform="translate(166.743 2703.808)" fill="none" stroke="#1c1c3d" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" />
+                                        <line id="Line_24" class="path" data-name="Line 24" x2="11.255" transform="translate(166.743 2736.887)" fill="none" stroke="#1c1c3d" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" />
+                                    </g>
+                                </g>
+                            </svg>
+                        </div>
+                        <div class="bullet-description">Centralised training on-location at the Lenskart Academy in NCR, along with continuous learning using e-learning tools.</div>
+                    </div>
+                    <div class="single-bullet">
+                        <div class="bullet-icon"><svg xmlns="http://www.w3.org/2000/svg" width="100.911" height="85.573" viewBox="0 0 100.911 85.573">
+                                <g id="Group_39" data-name="Group 39" transform="translate(-123.678 -2873.741)">
+                                    <path id="Path_23" data-name="Path 23" d="M164.543,2948.017c-2.588.033-30.314,0-35.4,0a4,4,0,0,1-2.8-1.19,4.094,4.094,0,0,1-1.162-2.871V2879.3a4.014,4.014,0,0,1,3.966-4.06h89.979a4.014,4.014,0,0,1,3.966,4.06v64.655a4.038,4.038,0,0,1-3.966,4.061c-11.866.187-16.174.232-33.927.179" fill="none" stroke="#1c1c3d" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" />
+                                    <path id="Path_24" data-name="Path 24" d="M166.883,2936.341H143.964a8.726,8.726,0,0,0-2.124-5.254,8.336,8.336,0,0,0-4.954-2.717v-32.792a9.393,9.393,0,0,0,4.954-3.08,9.723,9.723,0,0,0,2.124-4.71H204.3a7.659,7.659,0,0,0,1.769,4.891,7.4,7.4,0,0,0,5.309,2.537v33.878a8.367,8.367,0,0,0-4.778,2.174,8.778,8.778,0,0,0-2.654,5.073H181.357" fill="none" stroke="#1c1c3d" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" />
+                                    <line id="Line_25" data-name="Line 25" x2="40.117" transform="translate(154.075 2899.641)" fill="none" stroke="#1c1c3d" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" />
+                                    <ellipse id="Ellipse_10" data-name="Ellipse 10" cx="10.54" cy="10.791" rx="10.54" ry="10.791" transform="translate(163.594 2907.721)" fill="none" stroke="#00dca6" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" />
+                                    <g id="Group_38" data-name="Group 38">
+                                        <path id="Path_25" data-name="Path 25" d="M179.311,2929.3l5.2,28.51-10.4-7.182" fill="none" stroke="#00dca6" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" />
+                                        <path id="Path_26" data-name="Path 26" d="M170.106,2928.485l-6.349,29.328,10.4-7.182" fill="none" stroke="#00dca6" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" />
+                                    </g>
+                                </g>
+                            </svg>
+                        </div>
+                        <div class="bullet-description">30-60 days long programme, with a certification from Lenskart Academy upon
+                            successful completion.</div>
+                    </div>
+                    <div class="single-bullet">
+                        <div class="bullet-icon"><svg xmlns="http://www.w3.org/2000/svg" width="102.062" height="88.609" viewBox="0 0 102.062 88.609">
+                                <g id="Group_35" data-name="Group 35" transform="translate(-123.678 -3044.943)">
+                                    <line id="Line_21" data-name="Line 21" x2="52.923" transform="translate(147.672 3073.077)" fill="none" stroke="#1c1c3d" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" />
+                                    <line id="Line_22" data-name="Line 22" x2="52.923" transform="translate(147.672 3097.63)" fill="none" stroke="#1c1c3d" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" />
+                                    <rect id="Rectangle_30" data-name="Rectangle 30" width="97.911" height="77.063" rx="7.331" transform="translate(125.178 3046.443)" fill="none" stroke="#1c1c3d" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" />
+                                    <path id="Path_17" data-name="Path 17" d="M182.719,3054.628h0a2.745,2.745,0,0,1-2.745,2.744H168.293a2.744,2.744,0,0,1-2.744-2.744h0l0-.585H136.454a2.743,2.743,0,0,0-2.744,2.744v56.376a2.744,2.744,0,0,0,2.744,2.744h75.359a2.745,2.745,0,0,0,2.745-2.744v-56.376a2.737,2.737,0,0,0-2.737-2.744h-28.99Z" fill="none" stroke="#1c1c3d" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" />
+                                    <path id="Path_18" data-name="Path 18" d="M188.134,3089.655q17.877,15.9,35.755,31.791a8.738,8.738,0,0,1-1.23,7.16,8.526,8.526,0,0,1-8.243,3.307l-35.244-32.4" fill="#d8f5eb" stroke="#00dca6" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" />
+                                    <path id="Path_19" data-name="Path 19" d="M159.383,3076.259c5.043-6.649,13.493-9.1,20.277-6.264a15.171,15.171,0,0,1,.189,28.137c-7.025,2.989-15.878.117-20.466-7.209h10.88v-14.664Z" fill="#d8f5eb" stroke="#00dca6" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" />
+                                </g>
+                            </svg>
+                        </div>
+                        <div class="bullet-description">Extensive & comprehensive hands-on training on both functional & soft skills.</div>
+                    </div>
+                </div>
+            </div>
+            <div class="right-img">
+                <img src="images/about-img-2.png" alt="">
+            </div>
+        </div>
+    </section>
+    <section class="container-fluid m-0 p-0 join-us-section">
+        <div class="row m-0 p-0">
+            <div class="join-left">
+                <img src="images/join-us.png" alt="">
+            </div>
+            <div class="join-right">
+                <h2 class="g-heading">
+                    Transform your skills today!
+                </h2>
+            </div>
+        </div>
+    </section>
+    <!-- Why Lenskart Academy -->
+    <section class="why-us container-fluid m-0 p-0" id="know-more">
+        <div class="row m-0 p-0 section-heading">
+            <h2>Why Lenskart Academy</h2>
+        </div>
+        <div class="row m-0 p-0 section-body">
+            <div class="col-md-4">
+                <div class="single-reason">
+                    <div class="why-icon">
+                        <img src="images/why-icon-1.svg" alt="" srcset="">
+                    </div>
+                    <div>
+                        <h2>100% Job Readiness</h2>
+                        <p>Successfully complete the program, receive a certificate from the academy and become a Lenskart employee.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="single-reason">
+                    <div class="why-icon">
+                        <img src="images/why-icon-2.svg" alt="" srcset="">
+                    </div>
+                    <div>
+                        <h2>State-Of-The-Art Infrastructure </h2>
+                        <p>Get access to High-tech learning eco-system with beautifully designed classrooms, retail labs, eye-testing labs and a simulation-based learning environment.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="single-reason">
+                    <div class="why-icon">
+                        <img src="images/why-icon-3.svg" alt="" srcset="">
+                    </div>
+                    <div>
+                        <h2>Tech-Enabled Learning </h2>
+                        <p>Engage with interactive byte-sized content, AI-based personalised-learning on our proprietary Learning Management System & smart assessments.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="single-reason">
+                    <div class="why-icon">
+                        <img src="images/why-icon-4.svg" alt="" srcset="">
+                    </div>
+                    <div>
+                        <h2>Industry-Integrated Program</h2>
+                        <p>Going beyond theory, experience practical and relevant training with real-world business challenges, thus ensuring you have the ability to deal with them once you start.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="single-reason">
+                    <div class="why-icon">
+                        <img src="images/why-icon-5.svg" alt="" srcset="">
+                    </div>
+                    <div>
+                        <h2>Holistic Skill Development</h2>
+                        <p>Apart from domain-relevant skills, learn holistic skill development through soft skills like effective verbal communication, body language to enhance non-verbal communication, personality development, and more.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="single-reason">
+                    <div class="why-icon">
+                        <img src="images/why-icon-6.svg" alt="" srcset="">
+                    </div>
+                    <div>
+                        <h2>Attractive Benefits</h2>
+                        <p>Upon joining Lenskart (post successful completion of training program), you will receive all the perks and benefits of working in one of the leading retail organizations in India. </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row m-0 p-0 section-footer justify-content-center">
+            <a href="#form-section" class="hero-cta btn btn-primary">Enquire Today</a>
+        </div>
+    </section>
+    <!-- Who is Lenskart Academy -->
+    <section class="container-fluid m-0 p-0 who-is">
+        <div class="row m-0 p-0 section-heading">
+            <h2>Who is Lenskart Academy for?</h2>
+        </div>
+        <div class="row m-0 p-0 section-body">
+            <div class="col-md-12">
+                <div class="who-is-card row">
+                    <div class="col-md-7 who-left">
+                        <h2>Academy of Retail</h2>
+                        <p>A school for retail professionals which runs a unique, intensive training program that's designed in-sync with the needs of modern, tech-based retail. Learn progressive skill-sets with a razor-sharp focus on customer service and collaboration.
+                        </p><br />
+                        <p>
+                            Whom is it for: Experienced professionals and freshers who have completed class 12 or 10+3 diploma
+                        </p>
+                    </div>
+                    <div class="col-md-5 who-right">
+                        <img src="images/who-1.png" alt="">
+                    </div>
+                </div>
+                <div class="who-is-card row second-card">
+                    <div class="col-md-5 who-right">
+                        <img src="images/who-2.png" alt="">
+                    </div>
+                    <div class="col-md-7 who-left">
+                        <h2>Academy of Optometry</h2>
+                        <p>A school for optometrists that transforms you into a world-class professional. The well-crafted training program blends technical and soft-skills, connecting academics with the industry.
+                        </p>
+                        <br />
+                        <p>
+                            Whom is it for: Those with prior knowledge of optometry, including a Diploma in Optometry, Bachelors in Optometry, Masters in Optometry,
+                            or B.Sc. in Optometry.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- How to section  -->
+    <section class="container-fluid m-0 p-0 how-to">
+        <div class="row m-0 p-0 section-heading">
+            <h2>How to Join Lenskart Academy?</h2>
+            <p>If you're ready to envision a brighter future with an industry-focused training program, here's how you can join us!</p>
+        </div>
+        <div class="row m-0 p-0 section-body">
+            <div class="col-md-6 how-to-content">
+                <div class="row m-0 p-0">
+                    <div class="col-md-12">
+                        <div class="howto-card">
+                            <img src="images/step1.svg" alt="" srcset="">
+                            <div>
+                                <h2>STEP 1</h2>
+                                <p>Apply on <br /> lenskartacademy.com</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-7 offset-md-5">
+                        <div class="howto-card">
+                            <img src="images/how-to-icon-2.svg" alt="" srcset="">
+                            <div>
+                                <h2>STEP 2</h2>
+                                <p>Our team will call and guide you through our document verification process to check
+                                    your eligibility. After review, the team will fix an assessment date with you.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-7">
+                        <div class="howto-card">
+                            <img src="images/how-to-icon-3.svg" alt="" srcset="">
+                            <div>
+                                <h2>STEP 3</h2>
+                                <p>You will go through multiple selection rounds, which would include online assessments and personal interactions. </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-7 offset-md-5">
+                        <div class="howto-card">
+                            <img src="images/how-to-icon-4.svg" alt="" srcset="">
+                            <div>
+                                <h2>STEP 4</h2>
+                                <p>If successful, you will receive a confirmation from us.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-8">
+                        <div class="howto-card">
+                            <img src="images/how-to-icon-5.svg" alt="" srcset="">
+                            <div>
+                                <h2>STEP 5</h2>
+                                <p>Congratulations! You’ve been accepted to Lenskart Academy and we can't wait to transform you into a leader of tomorrow.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 how-to-cta">
+                        <a href="#form-section" class="hero-cta btn btn-primary">Enquire Today</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Core Team Section  -->
+    <section class="container-fluid m-0 p-0 core-team">
+        <div class="row m-0 p-0 section-heading">
+            <h2>Our Core Team</h2>
+        </div>
+        <div class="row m-0 p-0 section-body">
+            <div class="col-md-4">
+                <div class="single-team-member">
+                    <div class="team-image">
+                        <img src="images/team-7.png" alt="" srcset="">
+                    </div>
+                    <div class="team-member-details">
+                        <h2>Sumit Marda</h2>
+                        <h5>Head | Academy</h5>
+                        <p>A serial entrepreneur with expertise in building businesses from scratch to scale.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="single-team-member">
+                    <div class="team-image">
+                        <img src="images/team-4.png" alt="" srcset="">
+                    </div>
+                    <div class="team-member-details">
+                        <h2>Anisha Saxena</h2>
+                        <h5>New Hire Training</h5>
+                        <p>Anisha has 13 plus years of
+                            experience in L & D in aviation and
+                            retail industry. She has worked with
+                            some reputed brands like Kingfisher, IndiGo, Vistara and Ritu Kumar.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="single-team-member">
+                    <div class="team-image">
+                        <img src="images/team-6.png" alt="" srcset="">
+                    </div>
+                    <div class="team-member-details">
+                        <h2>Teena Khanna</h2>
+                        <h5>Continuous Learning</h5>
+                        <p>With 18 years of experience in L&D,
+                            Teena has led talent development and learning strategy for brands like Tata Communications, Costa Coffee and McDonald’s in India.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="single-team-member">
+                    <div class="team-image">
+                        <img src="images/team-1.png" alt="" srcset="">
+                    </div>
+                    <div class="team-member-details">
+                        <h2>Japin Charan</h2>
+                        <h5>Lead | Optometry</h5>
+                        <p>A passionate eye care advisor, a retail Optometrist, and Head of the Optometry Department in Lenskart.com who has given lots to Indian opticians & optometrists.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="single-team-member">
+                    <div class="team-image">
+                        <img src="images/team-3.png" alt="" srcset="">
+                    </div>
+                    <div class="team-member-details">
+                        <h2>Anusha Priya</h2>
+                        <h5>Lead | Communications</h5>
+                        <p>An English Language Teaching Expert, a linguist, a Neuro-Linguistic Programming Practitioner and a Researcher at IIM Ahmedabad, Anusha comes with over 17 years of experience in varied industries.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="single-team-member">
+                    <div class="team-image">
+                        <img src="images/team-5.png" alt="" srcset="">
+                    </div>
+                    <div class="team-member-details">
+                        <h2>Prashant Bhatkar</h2>
+                        <h5>NHT Optometry</h5>
+                        <p>With an experience of 17 years in the team optical industry, his work experience involves a blend of practicing eye care & training eyewear professionals
+                            at different optometry institutes, eye hospitals & eyewear retail chains.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="single-team-member">
+                    <div class="team-image">
+                        <img src="images/team-2.png" alt="" srcset="">
+                    </div>
+                    <div class="team-member-details">
+                        <h2>Sakshi Saini</h2>
+                        <h5>Lead | PD and Grooming</h5>
+                        <p>Personality Development Coach from
+                            last 8 years Sakshi is a a certified
+                            MakeUp Artist from London School
+                            of Make up and has worked for HCL
+                            Healthcare, IndiGo and Jet Airways.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- <div class="col-md-4">
+                <div class="single-team-member">
+                    <div class="team-image">
+                        <img src="images/team-8.png" alt="" srcset="">
+                    </div>
+                    <div class="team-member-details">
+                        <h2>Mahipal Antil</h2>
+                        <h5>Lead | Academy Operations</h5>
+                        <p>Seasoned professional with total 25 plus years work experience, headed training operations, planning and resources management in aviation sector.</p>
+                    </div>
+                </div>
+            </div> -->
+            <div class="col-md-4">
+                <div class="single-team-member">
+                    <div class="team-image">
+                        <img src="images/team-9.png" alt="" srcset="">
+                    </div>
+                    <div class="team-member-details">
+                        <h2>Priyank Saini</h2>
+                        <h5>Lead | Learning Management System</h5>
+                        <p>A computer science engineer by profession, he brings 4+ yrs of experience working in the startup ecosystem.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- VIDEOS SECTION -->
+    <section class="container-fluid m-0 p-0 videos-section">
+        <div class="row m-0 p-0 section-heading">
+            <h2>VIDEOS SECTION</h2>
+        </div>
+        <div class="row m-0 p-0 section-body">
+            <div class="col-lg-4 col-md-6 col-12 mb-lg-0 mb-3">
+                <iframe width="100%" src="https://www.youtube.com/embed/tgbNymZ7vqY"></iframe>
+            </div>
+            <div class="col-lg-4 col-md-6 col-12 mb-lg-0 mb-3">
+                <iframe width="100%" src="https://www.youtube.com/embed/tgbNymZ7vqY"></iframe>
+            </div>
+            <div class="col-lg-4 col-md-6 col-12">
+                <iframe width="100%" src="https://www.youtube.com/embed/tgbNymZ7vqY"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ SECTION  -->
+    <section class="container-fluid m-0 p-0 faq-section">
+        <div class="row m-0 p-0 section-heading">
+            <h2>FAQ's</h2>
+        </div>
+        <div class="row m-0 p-0 section-body">
+            <div class="col-md-6">
+                <div class="accordion" id="accordionExample">
+                    <div class="card faq-single">
+                        <div class="card-header" id="headingOne">
+                            <h2 class="mb-0">
+                                <button class="btn  btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    Why should I join Lenskart?
+                                    <i class="fas fa-angle-down faq-icon-close"></i>
+                                    <i class="fas fa-angle-up faq-icon-open"></i>
+                                    <!-- <img src="images/arrow-down.svg" alt="" class="faq-icon-close" srcset=""> -->
+                                    <!-- <img src="images/cross-icon.svg" alt="" class="faq-icon-open" srcset=""> -->
+                                </button>
+                            </h2>
+                        </div>
+                        <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+                            <div class="card-body">
+                                Lenskart is an Omnichannel and a leading eyewear brand with 1000+ stores and 4500+ employees across India with aggressive expansions
+                                ambitions of adding 40 to 50 stores every month; the opportunities to grow within Lenskart are unlimited for any new hire.
+                                We are also expanding globally with stores coming up in Dubai, Singapore and US. The culture at Lenskart is anchored in learning and growth.
+                                Unlike other retail brands,
+                                we don’t just offer a job, we offer a career to each employee. A large part of our leadership has been developed through
+                                internal training and skilling opportunities. We are a clear leader in the eyewear retail space growing exponentially with each day.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card faq-single">
+                        <div class="card-header" id="headingTwo">
+                            <h2 class="mb-0">
+                                <button class="btn  btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    Where will I stay during the training period?
+                                    <i class="fas fa-angle-down faq-icon-close"></i>
+                                    <i class="fas fa-angle-up faq-icon-open"></i>
+                                </button>
+                            </h2>
+                        </div>
+                        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                            <div class="card-body">
+                                During this time, candidates can choose from the list of our recommended accommodation options to finalize one that’s suitable for them for the remaining duration of the program. Some of our accommodation options come with meal services as well. They can also seek support from the Academy Logistic SPOCS. Candidates will be required to pay for their own accommodation. Candidates can also make their own arrangements alternatively.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card faq-single">
+                        <div class="card-header" id="headingThree">
+                            <h2 class="mb-0">
+                                <button class="btn  btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    Do I receive any certification for the program completion ?
+                                    <i class="fas fa-angle-down faq-icon-close"></i>
+                                    <i class="fas fa-angle-up faq-icon-open"></i>
+                                </button>
+                            </h2>
+                        </div>
+                        <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                            <div class="card-body">
+                                All training programs at Lenskart Academy are built with robust assessments & certifications completed by trainers & business team. Earning a certification from Lenskart Academy is surely an achievement that would boost your career forever. </div>
+                        </div>
+                    </div>
+                    <div class="card faq-single">
+                        <div class="card-header" id="headingFour">
+                            <h2 class="mb-0">
+                                <button class="btn  btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                    Who will pay for my travel to Gurgaon and back to my city?
+                                    <i class="fas fa-angle-down faq-icon-close"></i>
+                                    <i class="fas fa-angle-up faq-icon-open"></i>
+                                </button>
+                            </h2>
+                        </div>
+                        <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
+                            <div class="card-body">
+                                All the travel expenses to and fro from Lenskart Academy will be borne by the candidate.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card faq-single">
+                        <div class="card-header" id="headingFive">
+                            <h2 class="mb-0">
+                                <button class="btn  btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                    Do I need to be fully COVID vaccinated to join Lenskart?
+                                    <i class="fas fa-angle-down faq-icon-close"></i>
+                                    <i class="fas fa-angle-up faq-icon-open"></i>
+                                </button>
+                            </h2>
+                        </div>
+                        <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordionExample">
+                            <div class="card-body">
+                                As per latest guidelines from local authorities, people using office and public places needs to be fully vaccinated. Vaccination is also a mandatory requirement for shops located in high-street and malls.
+                                Hence, you will have to furnish minimum 1st dose administered, COVID Vaccination certificate, to be able to join Lenskart.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="accordion" id="accordionExample2">
+                    <div class="card faq-single">
+                        <div class="card-header" id="headingSix">
+                            <h2 class="mb-0">
+                                <button class="btn  btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                                    I have completed/ certified from XYZ institute/ university; do I still need to undergo this training program?
+                                    <i class="fas fa-angle-down faq-icon-close"></i>
+                                    <i class="fas fa-angle-up faq-icon-open"></i>
+                                </button>
+                            </h2>
+                        </div>
+                        <div id="collapseSix" class="collapse" aria-labelledby="headingSix" data-parent="#accordionExample2">
+                            <div class="card-body">
+                                Each brand is unique in their product and service offerings. Training programs at Lenskart Academy are especially tailored
+                                to the brand standards and customer service guidelines of Lenskart. Being part of the New Hire training program will equip you to excel at Lenskart business.
+                                Earning a certification from Lenskart Academy is surely an achievement that would boost your career forever.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card faq-single">
+                        <div class="card-header" id="headingSeven">
+                            <h2 class="mb-0">
+                                <button class="btn  btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+                                    Can I attend NHT program in my city?
+                                    <i class="fas fa-angle-down faq-icon-close"></i>
+                                    <i class="fas fa-angle-up faq-icon-open"></i>
+                                </button>
+                            </h2>
+                        </div>
+                        <div id="collapseSeven" class="collapse" aria-labelledby="headingSeven" data-parent="#accordionExample2">
+                            <div class="card-body">
+                                Currently, Lenskart Academy is located only in Gurgaon as this is the central location for all the training programs.
+                                Hence, all the new hires are required to travel to Gurgaon from their current location to successfully complete the New Hire Training (NHT) program.
+                                New Hire Training program conducted by Lenskart Academy is mandatory to successfully complete the hiring process at Lenskart.
+                                Lenskart Academy with its best-in-class infrastructure and industry expert trainers gives you an opportunity to uplift your career on a fast-track mode.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card faq-single">
+                        <div class="card-header" id="headingEight">
+                            <h2 class="mb-0">
+                                <button class="btn  btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
+                                    Why do I need to travel to Gurgaon for this program?
+                                    <i class="fas fa-angle-down faq-icon-close"></i>
+                                    <i class="fas fa-angle-up faq-icon-open"></i>
+                                </button>
+                            </h2>
+                        </div>
+                        <div id="collapseEight" class="collapse" aria-labelledby="headingEight" data-parent="#accordionExample2">
+                            <div class="card-body">
+                                Well-trained employees are the foundation of Lenskart’s success and we give a lot of importance to the training of the employees here.
+                                As it is an integral part of the culture at Lenskart, we have set up a centralized Academy at Gurgaon, wherein all our new hire trainees can learn
+                                together under one umbrella which helps them develop all the skills that are required for a new hire to work in the store and get productive from day one.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card faq-single">
+                        <div class="card-header" id="headingNine">
+                            <h2 class="mb-0">
+                                <button class="btn  btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseNine" aria-expanded="false" aria-controls="collapseNine">
+                                    What is the New Hire Training (NHT) Program at Lenskart?
+                                    <i class="fas fa-angle-down faq-icon-close"></i>
+                                    <i class="fas fa-angle-up faq-icon-open"></i>
+                                </button>
+                            </h2>
+                        </div>
+                        <div id="collapseNine" class="collapse" aria-labelledby="headingNine" data-parent="#accordionExample2">
+                            <div class="card-body">
+                                Lenskart provides an immersive learning experience for all new hires at our state-of-the-art Lenskart Academy. All new hires from across the country travel to the Academy to undergo the NHT program and once completed they go back to the regions or are assigned to stores they are hired for. This training program effectively skills the new hires to ensure productivity from day one.
+                                <br /><br />Training Duration:
+                                <br />Optometrists would be 37 days
+                                <br />SAs would be 30 days
+                                <br />SMs would be 33 days
+                                <br /><br /> At Lenskart Academy, we ensure an all-round development of the learners both in functional and soft skills. We are committed to develop the leaders of tomorrow. Some of the topics we cover during the New Hire Training Program Are Retail Operations & Technology, Optometry, Personality Development & Grooming, Communication, Leadership, Customer Service, and Sales & Selling Skills.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="container-fluid m-0 p-0 footer-section">
+        <div class="row m-0 p-0 upper-footer">
+            <div class="col-md-8 col-12 text">
+                <h2>
+                    Develop your skills,<br>reframe your future.
+                </h2>
+            </div>
+            <div class="col-md-4 col-12 links">
+                <div class="social-links">
+                    <a href="https://www.linkedin.com/company/lenskart-academy/"><img src="images/linkedin.svg" alt=""></a>
+                    <a href="https://www.instagram.com/lenskartacademy/"><img src="images/insta.svg" alt=""></a>
+                    <a href="https://www.facebook.com/Lenskartacademy/"><img src="images/fb.svg" class="fb-icon" alt=""></a>
+                </div>
+            </div>
+        </div>
+        <div class="row m-0 p-0 lower-footer">
+            <img src="images/logo-white.svg" alt="">
+            <p>Copyright 2021 ZS. All right reserved.</p>
+        </div>
+    </footer>
+    <script src="js/address.js" type="text/javascript"></script>
+    <script src="js/form.js" type="text/javascript"></script>
+</body>
+
+</html>
